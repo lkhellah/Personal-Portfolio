@@ -14,7 +14,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Layaal Khellah</a>
+          <a class="navbar-brand" href="index.html">Layaal.</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -26,16 +26,17 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="projects.html">PROJECTS</a>
+                <a class="nav-link" href="#about">ABOUT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="previous-work.html">PREVIOUS WORK</a>
+                <a class="nav-link" href="#work">PREVIOUS WORK</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">ABOUT</a>
+                <a class="nav-link" href="#projects">PROJECTS</a>
               </li>
+             
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">CONTACT</a>
+                <a class="nav-link" href="#contact">CONTACT</a>
               </li>
             </ul>
           </div>
@@ -43,32 +44,121 @@
       </nav>
     </header>
 
-    <main
-      class="d-flex align-items-center justify-content-center text-center flex-wrap"
-      style="height: 80vh"
-    >
-      <!-- Left Side: Text -->
-      <div class="me-5">
-        <h1>Hi, I'm <strong>Layaal Khellah</strong></h1>
-        <p class="bio mt-3">
-          and I am a Computer Science Master's student at Portland State
-          University.
-        </p>
-      </div>
+    <main>
+      <section
+        id="about"
+        class="d-flex align-items-center justify-content-center text-center text-md-start flex-wrap flex-md-nowrap gap-3 px-3"
+        style="height: 80vh"
+      >
+        <div class="text-box" style="max-width: 440px">
+          <h1>Hi, I'm <strong>Layaal Khellah</strong></h1>
+          <p class="bio">
+            I am a Master's student in Computer Science at Portland State
+            University, specializing in Artificial Intelligence and Machine
+            Learning. I have experience as a Teaching Assistant in software
+            engineering and unit testing courses, and I've contributed to
+            research in clinical informatics and in speech-hearing sciences. I'm
+            passionate about building impactful and responsible technologies —
+            especially in education and speech recognition.
+          </p>
+        </div>
 
-      <!-- Right Side: Image -->
-      <div class="profile-pic">
-        <img
-          src="../images/me.jpeg"
-          alt="Picture of Layaal"
-          class="rounded-circle"
-          width="320"
-          height="320"
-          style="object-fit: cover"
-        />
-      </div>
+        <div class="profile-pic">
+          <img
+            src="../images/me.jpeg"
+            alt="Picture of Layaal"
+            class="rounded-circle"
+            width="320"
+            height="320"
+            style="object-fit: cover"
+          />
+        </div>
+      </section>
+
+      <section id="work" class="container my-5">
+        <h2 class="text-center mb-4">PERVIOUS WORK & SKILLS</h2>
+      
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Teaching & Research Experience</h4>
+            <ul>
+              <li>Teaching Assistant – Software Engineering & Unit Testing</li>
+              <li>Research Assistant – Speech & Hearing Sciences (Aphasia Diagnosis)</li>
+              <li>Research Intern – Clinical Informatics Lab</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h4>Skills</h4>
+            <ul>
+              <li>Python, JavaScript, HTML/CSS</li>
+              <li>React, Bootstrap, Git/GitHub</li>
+              <li>Linux, Git, AWS, GCP, Visual Studio</li>
+            </ul>
+          </div>
+        </div>
+        <p class="mt-3">
+          <a href="LKresume.pdf" class="btn btn-outline-dark" target="_blank">View My Resume</a>
+        </p>
+        
+        <section id="projects" class="container my-5">
+          <h2 class="text-center mb-4">PROJECTS</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <h5>Spoken Audio Clustering</h5>
+              <p>
+                Clustered spoken digit samples using unsupervised learning on Google Speech Commands data.
+              </p>
+              <a href="https://github.com/lkhellah/data-clustering-project" target="_blank">GitHub Repo</a>
+            </div>
+            <div class="col-md-4">
+              <h5>Offline LLM Tutor for Math Education</h5>
+              <h6>(Proof of Concept)</h6>
+              <p>
+                As part of a final project for a Large Language Models course, I explored how offline AI tools can support education in underserved areas. I evaluated <strong>Qwen2.5-Math</strong> on elementary-level math questions using a Colab-based demo.
+                <br><br>
+                The model produced step-by-step solutions for problems aimed at young learners, like:
+                <em>"Lily has 18 apples. She gives 7 to a friend..."</em>
+                <br><br>
+                While the system is not yet interactive or deployable, it demonstrates how language models can be adapted for low-resource educational settings.
+              </p>
+              <a href="https://colab.research.google.com/drive/1KzNoNdMbvwD4lKsrzrGuGnaRlxgQt4Ji?usp=sharing" target="_blank">Colab Notebook</a>
+            </div>
+            <div class="col-md-4">
+              <h5>Automated Emails for Portland Playhouse</h5>
+              <p>
+                For my senior capstone, I worked with a team on <strong>WonderTix</strong>, a full-featured ticketing and CRM platform built for <strong>Portland Playhouse</strong>, a local theater company.
+                <br><br>
+                In our multi-term project, I focused on developing the email campaign system. I contributed to backend logic for email scheduling and helped design the message composition UI. This work involved direct collaboration with a real client and combined technical development with usability testing.
+              </p>
+              <a href="https://github.com/WonderTix/WonderTix" target="_blank">GitHub Repo</a>
+            </div>    
+          </div>
+        </section>
+        
+        <section id="contact" class="container my-5">
+          <h2 class="text-center mb-4">Contact Me</h2>
+          <form id="contact-form" class="mx-auto" style="max-width: 600px;">
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your name" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="your@email.com" required />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Send</button>
+          </form>
+        </section>
+        
+
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
   </body>
 </html>
