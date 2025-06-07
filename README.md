@@ -6,9 +6,9 @@ This is a personal portfolio site built for my Web Development class at PSU.
 
 - Responsive one-page layout
 - Bootstrap-based styling
-- About, Projects, Previous Work, Contact, and Fun Facr sections
+- About, Projects, Previous Work, Contact, and Fun Fact sections
 - Form with JavaScript validation + console logging
-- New Bootstrap component (Accordion)
+- Bonus Bootstrap component (which was an Accordion)
 
 ## Deployment
 
