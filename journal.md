@@ -46,7 +46,9 @@
 - Refined spacing and layout for consistency across sections.
 
 ### June 7, 2025
-- used WAVE and found an empty button error in the nav bar so I added an aria-label to describe what the button does. 
+
+- used WAVE and found an empty button error in the nav bar so I added an aria-label to describe what the button does.
+
 ---
 
 ## Features Implemented
@@ -79,7 +81,7 @@
 - **Accordion default open:** Had to remove `collapse show` to make all items collapsed by default
 - **Scrolling behavior:** Anchor links scrolled too high or too low, and required layout tweaking
 - **Commit quality and timeliness:** Forgot to commit as I worked, but needed to ensure each commit was meaningful and represented a standalone unit of work
-- **Journaling** Remembering to stop and journal each step was a challenge because I typically stayed coding and then remembered after so I would have to retrace my steps. 
+- **Journaling** Remembering to stop and journal each step was a challenge because I typically stayed coding and then remembered after so I would have to retrace my steps.
 
 ---
 
