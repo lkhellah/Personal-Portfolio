@@ -20,6 +20,7 @@
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
+            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -38,6 +39,11 @@
               <li class="nav-item">
                 <a class="nav-link" href="#contact">CONTACT</a>
               </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#FAQ">FUN FACTS</a>
+              </li>
+
             </ul>
           </div>
         </div>
@@ -65,7 +71,7 @@
 
         <div class="profile-pic">
           <img
-            src="../images/me.jpeg"
+            src="/images/me.jpeg"
             alt="Picture of Layaal"
             class="rounded-circle"
             width="320"
@@ -152,6 +158,32 @@
             </div>
             <button type="submit" class="btn btn-dark">Send</button>
           </form>
+        </section>
+        
+        <section id="FAQ" class="container my-5">
+          <h2 class="text-center mb-4">Fun Facts</h2>
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="q1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">
+                  What are you passionate about?
+                </button>
+              </h2>
+              <div id="a1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">I'm passionate about AI for education and language technologies.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="q2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">
+                  What’s your favorite project?
+                </button>
+              </h2>
+              <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">My LLM-based math tutor for rural education because it blends social impact and AI.</div>
+              </div>
+            </div>
+          </div>
         </section>
         
 
