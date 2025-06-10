@@ -4,8 +4,8 @@
 **Course:** Intro to Web Development  
 **Project Title:** Personal Portfolio Website  
 **GitHub Repo:** [https://github.com/lkhellah/Personal-Portfolio]  
-**Deployed Site:** [https://lkhellah.github.io/Personal-Portfolio/]
-**Presentation Recording:**: [https://media.pdx.edu/media/t/1_1d9koq6e]
+**Deployed Site:** [https://lkhellah.github.io/Personal-Portfolio/]  
+**Presentation Recording:** [https://media.pdx.edu/media/t/1_1d9koq6e]
 
 ---
 
@@ -19,9 +19,9 @@
 - Used `<nav class="navbar navbar-expand-lg>` with a toggler button for responsiveness.
 - reflection: at this point, I had been planning a multi-page implementation. But I ended up doing a one page implementation so I don't use any html except the index.html. 
 - SO, I originally linked to about.html, projects.html, etc., but later changed all links to #section-id to support single-page design.
-- Also, I Used <nav class="navbar navbar-expand-lg"> and Bootstrap’s responsive classes (navbar-toggler, collapse navbar-collapse) to ensure the navbar works on smaller screens.
-### June 2, 2025
+- Also, I Used `<nav class="navbar navbar-expand-lg">` and Bootstrap’s responsive classes (navbar-toggler, collapse navbar-collapse) to ensure the navbar works on smaller screens.  
 
+### June 2, 2025
 - Designed the **About section** with a centered layout using Bootstrap Flexbox.
 - I included a circular profile picture, styled using `border-radius: 50%` and `object-fit: cover`.
 - The circular-ness of the image had corresponding work in the .css file using an profile pic class. The class was for better control over sizing, and ensured the `<img>` inside used width: 100%, height: 100%, and object-fit: cover to prevent distortion.
@@ -29,11 +29,11 @@
 - My first sentence of the bio was bold and larger than the rest of the text using an h1 header and a `<`strong>` classifier. 
 
 ### June 3, 2025
-- changing to single page layout. making sections for each requirement. SO:
+- I am changing to single page layout. And, I am making sections for each requirement. SO:
 - Each section had a `<section>` tag with an ID, a heading (`<h2>`), and inner content arranged in rows or columns.
 - Added the **Previous Work & Skills section**, with two columns: one for experience and one for technical skills. The columns wer made using div class="col-md-4"
 - For the skills list, I used `<ul> ` with bullet points and wrapped both experience and skills in .col-md-6 divs inside a .row for a two-column layout.
-- Linked to my resume (PDF) and added bullet points for past research and TA experience.
+- I linked  my resume (PDF) 
 
 ### June 4, 2025
 - Built the **Projects section** with three projects using Bootstrap's grid system. (following same section layouts as for the previous work section)
@@ -44,8 +44,7 @@
 
 - Developed the Contact form using Bootstrap’s form classes. Used `<form>` with grouped labels/inputs and added a submit `<button>`.Added required attributes and styled max width with Bootstrap’s mx-auto and max-width.
 - Connected `script.js` to handle form submission with event listeners. (can error check with inspect->console).  The form uses standard `<label>` and `<input>` groups wrapped in form-control and mb-3 Bootstrap classes to ensure good spacing and accessibility.
-- I added an alerts to thank the sender 
-- I also reset the form after submission. 
+- I added an alert() in script.js that thanks the sender by name after the form is submitted. This pops up with a message like "Thanks, [Name]! Your message has been received." It confirms the submission without navigating away from the page.- I also reset the form after submission. 
 - Wrote a validateForm() function to ensure name, email, and message are properly filled out before submission.
 - Added live character count using messageInput.addEventListener('input', ...) and displayed red if over 500 characters: 
     - Created a `<small>` element dynamically using JavaScript and inserted it below the message box for the character counter.
@@ -75,7 +74,7 @@
 - I deleted the unused .html files from the inital project scaffolding of a multi-page implementation.
 
 ### Fixes & Polishing
-- Moved the #projects section outside of the #work section to improve semantic structure and avoid layout nesting issues. (Projects being inside work section was accidental anyway)
+- Moved the #projects section outside of the #work section to improve semantic structure and avoid layout nesting issues. (Project section being inside work section was accidental anyway)
 - Corrected a typo in “PERVIOUS WORK” to “PREVIOUS WORK.”
 - Ran Prettier multiple times to clean up HTML indentation and ensure consistent tag formatting across the project.
 
